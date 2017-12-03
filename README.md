@@ -2,7 +2,7 @@
 
 - Install `cp sublime/usda-syntax.yaml <Sublime-Packages-Folder>/usda/usda.sublime-syntax`
 
-- Example: ![](imgs/sublime-example.jpg)
+- Example: ![](imgs/sublime-example.png)
 
 ### Disclaimer(s)
 
