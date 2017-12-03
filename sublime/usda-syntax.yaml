@@ -1,0 +1,65 @@
+%YAML 1.2
+---
+file_extensions:
+  - usda 
+scope: source.usda
+contexts:
+  main:
+    - match: '"'
+      scope: punctuation.definition.string.begin.usda
+      push: double_quoted_string
+
+    - match: '@'  
+      scope: punctuation.definition.string.begin.usda
+      push: asset_path_string
+
+    - match: '<\/'
+      scope: punctuation.definition.string.begin.usda
+      push: prim_path_string
+
+    - match: '\b(class|def|over|variantSet)\b'
+      scope: keyword.control.usda
+
+    - match: '\b(add|delete|reorder)\b'  
+      scope: constant.language.usda
+
+    - match: '\b(inherits|references|variants|payload|subLayers)\b'
+      scope: keyword.type.usda
+
+    - match: '\b(bool|uchar|int|uint|half|float|double|string|token|asset|color|point|normal|frame|vector)[0-9]?[0-9]?(d)?(f)?(\[\])?\b'
+      scope: keyword.type.usda  
+
+    - match: '\b(kind|defaultPrim|upAxis|startTimeCode|endTimeCode|instanceable|hidden|active)\b'
+      scope: keyword.language.usda
+
+    - match: '\b(uniform|custom)\b'  
+      scope: constant.language.usda
+
+    - match: '(\w)+:'      
+      scope: variable.language.usda
+
+    - match: '\#usda\W[0-9]+.[0-9]'  
+      scope: keyword.import.usda
+
+    - match: '\b(-)?[0-9.]+[0-9]?\b'
+      scope: constant.numeric.usda
+
+  double_quoted_string:
+    - meta_scope: string.quoted.double.usda
+    - match: '\\.'
+      scope: constant.character.escape.usda
+    - match: '"'
+      scope: punctuation.definition.string.end.usda
+      pop: true
+
+  prim_path_string:
+    - meta_scope: string.quoted.double.usda
+    - match: '>'
+      scope: punctuation.definition.string.end.usda
+      pop: true          
+
+  asset_path_string:
+    - meta_scope: string.quoted.double.usda
+    - match: '@'
+      scope: punctuation.definition.string.end.usda
+      pop: true      
