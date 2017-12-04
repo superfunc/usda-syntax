@@ -1,3 +1,8 @@
+;; usage: load this at emacs start
+;; m-x usda-mode
+;; see LICENSE for details
+;; github.com/superfunc/usda-syntax
+
 (setq usda-font-lock-keywords                                                   
       (let* ((usda-keywords '("def" "class" "over" "payload" "subLayers"        
                               "references" "inherits" "variants" 
