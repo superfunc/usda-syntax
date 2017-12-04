@@ -1,3 +1,7 @@
+Nothing crazy, basic syntax highlighting in the common editors for the ascii
+representation of USD (http://openusd.org) files. Contributors welcome, 
+especially for emacs/sublime which aren't my primary editors.
+
 ### emacs 
 
 - Install: Add to emacs load scrip, launch with _<M-X>_ `usda-mode` 
