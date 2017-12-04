@@ -17,7 +17,7 @@ contexts:
       scope: punctuation.definition.string.begin.usda
       push: prim_path_string
 
-    - match: '\b(class|def|over|variantSet)\b'
+    - match: '\b(class|def|over|variant|variantSets|dictionary|timeSamples|clips|variantSet)\b'
       scope: keyword.control.usda
 
     - match: '\b(add|delete|reorder)\b'  
@@ -26,7 +26,7 @@ contexts:
     - match: '\b(inherits|references|variants|payload|subLayers)\b'
       scope: keyword.type.usda
 
-    - match: '\b(bool|uchar|int|uint|half|float|double|string|token|asset|color|point|normal|frame|vector)[0-9]?[0-9]?(d)?(f)?(\[\])?\b'
+    - match: '\b(bool|uchar|int|uint|half|quat|float|double|string|token|asset|color|point|normal|frame|vector|matrix)[0-9]?[0-9]?(d)?(f)?(\[\])?\b'
       scope: keyword.type.usda  
 
     - match: '\b(kind|defaultPrim|upAxis|startTimeCode|endTimeCode|instanceable|hidden|active)\b'
