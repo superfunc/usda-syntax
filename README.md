@@ -1,6 +1,13 @@
 Nothing crazy, basic syntax highlighting in the common editors for the ascii
 representation of USD (http://openusd.org) files. Contributors welcome, 
-especially for emacs/sublime which aren't my primary editors.
+especially for anything that isn't vim.
+
+- [emacs](https://github.com/superfunc/usda-syntax#emacs)
+- [sublime](https://github.com/superfunc/usda-syntax#sublime)
+- [vim (TBD)]
+- [atom (TBD)]
+- [vscode (TBD)]
+
 
 ### emacs 
 
@@ -9,7 +16,7 @@ especially for emacs/sublime which aren't my primary editors.
 - Example: ![](imgs/emacs-example.png)
 
 
-### sublime(3)
+### sublime
 
 - Install `cp sublime/usda-syntax.yaml <Sublime-Packages-Folder>/usda/usda.sublime-syntax`
 
