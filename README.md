@@ -4,23 +4,34 @@ especially for anything that isn't vim.
 
 - [emacs](https://github.com/superfunc/usda-syntax#emacs)
 - [sublime](https://github.com/superfunc/usda-syntax#sublime)
-- [vim (TBD)]
+- [vim](https://github.com/superfunc/usda-syntax#vim)
 - [atom (TBD)]
 - [vscode (TBD)]
 
 
 ### emacs 
 
-- Install: Add to emacs load scrip, launch with _<M-X>_ `usda-mode` 
+- Install: Add to emacs load script, launch with _<M-X>_ `usda-mode` 
 
 - Example: ![](imgs/emacs-example.png)
 
 
 ### sublime
 
-- Install `cp sublime/usda-syntax.yaml <Sublime-Packages-Folder>/usda/usda.sublime-syntax`
+- Install: `cp sublime/usda-syntax.yaml <Sublime-Packages-Folder>/usda/usda.sublime-syntax`
 
 - Example: ![](imgs/sublime-example.png)
+
+### vim
+- Install: Add the following block to `$MYVIMRC`, remembering to substitute
+a real file path in place of `<LOCATION>`
+```vim
+au BufRead,BufNewFile *.usd set filetype=usda
+au BufRead,BufNewFile *.usda set filetype=usda
+autocmd FileType usda source <LOCATION>/usda-syntax/vim/usda.vim
+```
+
+- Example: ![](imgs/vim-example.png)
 
 ### Disclaimer(s)
 
