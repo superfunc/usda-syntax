@@ -5,9 +5,8 @@ especially for anything that isn't vim.
 - [emacs](https://github.com/superfunc/usda-syntax#emacs)
 - [sublime](https://github.com/superfunc/usda-syntax#sublime)
 - [vim](https://github.com/superfunc/usda-syntax#vim)
-- [atom (TBD)]
-- [vscode (TBD)]
 
+Looking for other editors(VSCode/Atom etc)? Check out https://github.com/vfxpro99/awesome-usd !
 
 ### emacs 
 
