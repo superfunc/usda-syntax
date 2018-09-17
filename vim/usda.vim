@@ -10,7 +10,7 @@ if exists("b:current_syntax")
 endif
 
 " Keywords
-syn keyword usdaKeyword def over class subLayers payload
+syn keyword usdaKeyword def over class subLayers payload rel
 syn keyword usdaKeyword references inherits variants
 syn keyword usdaKeyword variantSet variantSets
 syn keyword usdaKeyword dictionary clips customData
@@ -18,6 +18,7 @@ syn keyword usdaKeyword uniform custom timeSamples
 highlight link usdaKeyword Keyword
 
 " Types
+syn keyword usdaType bool
 syn keyword usdaType double double2 double3 double4               
 syn keyword usdaType float float2 float3 float4                   
 syn keyword usdaType half half2 half3 half4                       
